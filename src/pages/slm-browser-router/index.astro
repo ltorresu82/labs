@@ -1,0 +1,180 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import InstrumentRail from "../../components/InstrumentRail.astro";
+
+const title = "SLM Browser Router — Engineering Labs";
+const description =
+  "Clasificación experimental de solicitudes en español con Qwen2.5-0.5B ejecutado localmente mediante WebGPU.";
+const initialOutput = JSON.stringify(
+  {
+    categoria: "pendiente",
+    prioridad: "pendiente",
+    requiere_revision: true,
+    resumen: "Carga el modelo para iniciar la prueba."
+  },
+  null,
+  2
+);
+---
+
+<BaseLayout {title} {description}>
+  <div class="lab-shell lab-detail-shell">
+    <InstrumentRail compact />
+
+    <main id="contenido" class="lab-detail">
+      <nav class="detail-nav" aria-label="Navegación del laboratorio">
+        <a href="../">← Volver al catálogo</a>
+        <a href="https://github.com/ltorresu82/labs">Código fuente</a>
+      </nav>
+
+      <header class="detail-header">
+        <div>
+          <span class="lab-index">LAB 01 / SLM / WEBGPU</span>
+          <h1>SLM Browser Router</h1>
+        </div>
+        <p>
+          Una prueba local para descubrir si un modelo pequeño puede clasificar
+          solicitudes bajo un contrato JSON antes de necesitar un servicio remoto.
+        </p>
+      </header>
+
+      <section class="experiment-bench" aria-labelledby="bench-title">
+        <div class="bench-status">
+          <div>
+            <span>Entorno</span>
+            <strong id="webgpu-state">Detectando WebGPU…</strong>
+          </div>
+          <div>
+            <span>Modelo</span>
+            <strong>Qwen2.5 · 0.5B · q4f16</strong>
+          </div>
+          <div>
+            <span>Privacidad</span>
+            <strong>Inferencia local</strong>
+          </div>
+        </div>
+
+        <div class="bench-grid">
+          <div class="bench-input">
+            <div class="bench-heading">
+              <div>
+                <span class="panel-label">ENTRADA / SOLICITUD</span>
+                <h2 id="bench-title">Texto a clasificar</h2>
+              </div>
+              <button id="load-model" class="button-secondary" type="button">
+                Preparar modelo
+              </button>
+            </div>
+
+            <label for="request-text">Solicitud sintética</label>
+            <textarea id="request-text" rows="8">La API de pagos responde 401 desde esta mañana y tenemos clientes bloqueados.</textarea>
+
+            <div class="sample-row" aria-label="Ejemplos sintéticos">
+              <button type="button" data-sample="La API de pagos responde 401 desde esta mañana y tenemos clientes bloqueados.">Incidente API</button>
+              <button type="button" data-sample="Necesito actualizar la razón social y el correo donde recibimos las facturas.">Facturación</button>
+              <button type="button" data-sample="Quiero conocer los planes disponibles para integrar su plataforma con nuestro ERP.">Consulta comercial</button>
+            </div>
+
+            <div class="model-progress" aria-live="polite">
+              <div class="progress-copy">
+                <span id="model-status">El modelo se descarga solo cuando lo solicitas.</span>
+                <output id="model-progress-value">0%</output>
+              </div>
+              <progress id="model-progress" max="100" value="0">0%</progress>
+            </div>
+
+            <button id="run-classification" class="button-primary" type="button" disabled>
+              Ejecutar clasificación
+            </button>
+          </div>
+
+          <div class="bench-output" aria-live="polite">
+            <div class="output-heading">
+              <span class="panel-label">SALIDA / CONTRATO JSON</span>
+              <span id="run-time">Sin ejecución</span>
+            </div>
+            <pre id="classification-output"><code>{initialOutput}</code></pre>
+            <div id="output-state" class="output-state neutral">
+              La salida será validada antes de mostrarse como resultado correcto.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="method-grid" aria-label="Método y límites">
+        <article>
+          <span>01 / HIPÓTESIS</span>
+          <h2>Una tarea estrecha puede usar un modelo estrecho.</h2>
+          <p>
+            La prueba limita categorías, prioridad y formato. No intenta convertir el
+            modelo en un asistente general.
+          </p>
+        </article>
+        <article>
+          <span>02 / CONTROL</span>
+          <h2>El código conserva la autoridad.</h2>
+          <p>
+            La respuesta debe ser JSON válido y respetar enumeraciones conocidas. Una
+            salida inválida se marca para revisión.
+          </p>
+        </article>
+        <article>
+          <span>03 / LÍMITE</span>
+          <h2>Esta demo todavía no es un benchmark.</h2>
+          <p>
+            Los resultados de precisión y rendimiento se publicarán únicamente con un
+            dataset etiquetado y metodología reproducible.
+          </p>
+        </article>
+      </section>
+
+      <section class="source-notes" aria-labelledby="sources-title">
+        <div>
+          <span class="panel-label">FUENTES Y PESOS</span>
+          <h2 id="sources-title">Qué descarga el navegador</h2>
+        </div>
+        <div>
+          <p>
+            La primera carga descarga aproximadamente 483 MB de pesos cuantizados desde
+            Hugging Face. El navegador puede conservarlos en caché para próximas
+            sesiones.
+          </p>
+          <ul>
+            <li>
+              <a href="https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct">
+                Qwen2.5-0.5B-Instruct
+              </a>
+            </li>
+            <li>
+              <a href="https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct">
+                Conversión ONNX para Transformers.js
+              </a>
+            </li>
+            <li>
+              <a href="https://huggingface.co/docs/transformers.js/en/guides/webgpu">
+                Guía oficial de WebGPU
+              </a>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2506.02153">
+                Small Language Models are the Future of Agentic AI
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          Todo el texto de ejemplo es sintético. La solicitud escrita permanece en el
+          navegador durante la inferencia.
+        </p>
+        <a href="../">Explorar otros laboratorios</a>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    import "../../scripts/slm-lab";
+  </script>
+</BaseLayout>

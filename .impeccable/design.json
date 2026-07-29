@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-29T19:04:01.4590373-04:00",
+  "title": "Design System: Luis Torres — Engineering Labs",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel Instrumental",
+        "canonical": "#f3f5f4",
+        "tonalRamp": ["oklch(15% 0.006 160)", "oklch(27% 0.006 160)", "oklch(39% 0.006 160)", "oklch(51% 0.006 160)", "oklch(63% 0.006 160)", "oklch(75% 0.006 160)", "oklch(87% 0.006 160)", "oklch(95% 0.006 160)"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Superficie de Lectura",
+        "canonical": "#fbfcfb",
+        "tonalRamp": ["oklch(15% 0.003 160)", "oklch(27% 0.003 160)", "oklch(39% 0.003 160)", "oklch(51% 0.003 160)", "oklch(63% 0.003 160)", "oklch(75% 0.003 160)", "oklch(87% 0.003 160)", "oklch(95% 0.003 160)"]
+      },
+      "surface-alt": {
+        "role": "neutral",
+        "displayName": "Bandeja Técnica",
+        "canonical": "#e8ecea",
+        "tonalRamp": ["oklch(15% 0.008 160)", "oklch(27% 0.008 160)", "oklch(39% 0.008 160)", "oklch(51% 0.008 160)", "oklch(63% 0.008 160)", "oklch(75% 0.008 160)", "oklch(87% 0.008 160)", "oklch(95% 0.008 160)"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Blanco de Control",
+        "canonical": "#ffffff",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(95% 0 0)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Grafito",
+        "canonical": "#111514",
+        "tonalRamp": ["oklch(15% 0.01 160)", "oklch(27% 0.01 160)", "oklch(39% 0.01 160)", "oklch(51% 0.01 160)", "oklch(63% 0.01 160)", "oklch(75% 0.01 160)", "oklch(87% 0.01 160)", "oklch(95% 0.01 160)"]
+      },
+      "body-text": {
+        "role": "neutral",
+        "displayName": "Texto Operativo",
+        "canonical": "#313936",
+        "tonalRamp": ["oklch(15% 0.014 160)", "oklch(27% 0.014 160)", "oklch(39% 0.014 160)", "oklch(51% 0.014 160)", "oklch(63% 0.014 160)", "oklch(75% 0.014 160)", "oklch(87% 0.014 160)", "oklch(95% 0.014 160)"]
+      },
+      "muted-text": {
+        "role": "neutral",
+        "displayName": "Anotación Atenuada",
+        "canonical": "#66716c",
+        "tonalRamp": ["oklch(15% 0.017 160)", "oklch(27% 0.017 160)", "oklch(39% 0.017 160)", "oklch(51% 0.017 160)", "oklch(63% 0.017 160)", "oklch(75% 0.017 160)", "oklch(87% 0.017 160)", "oklch(95% 0.017 160)"]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Regla",
+        "canonical": "#bcc5c1",
+        "tonalRamp": ["oklch(15% 0.012 160)", "oklch(27% 0.012 160)", "oklch(39% 0.012 160)", "oklch(51% 0.012 160)", "oklch(63% 0.012 160)", "oklch(75% 0.012 160)", "oklch(87% 0.012 160)", "oklch(95% 0.012 160)"]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Regla Fuerte",
+        "canonical": "#7d8984",
+        "tonalRamp": ["oklch(15% 0.014 160)", "oklch(27% 0.014 160)", "oklch(39% 0.014 160)", "oklch(51% 0.014 160)", "oklch(63% 0.014 160)", "oklch(75% 0.014 160)", "oklch(87% 0.014 160)", "oklch(95% 0.014 160)"]
+      },
+      "signal-blue": {
+        "role": "primary",
+        "displayName": "Cobalto de Señal",
+        "canonical": "#164ed8",
+        "tonalRamp": ["oklch(15% 0.17 260)", "oklch(27% 0.17 260)", "oklch(39% 0.17 260)", "oklch(51% 0.17 260)", "oklch(63% 0.17 260)", "oklch(75% 0.17 260)", "oklch(87% 0.17 260)", "oklch(95% 0.17 260)"]
+      },
+      "signal-blue-dark": {
+        "role": "primary",
+        "displayName": "Cobalto Profundo",
+        "canonical": "#0d389f",
+        "tonalRamp": ["oklch(15% 0.15 260)", "oklch(27% 0.15 260)", "oklch(39% 0.15 260)", "oklch(51% 0.15 260)", "oklch(63% 0.15 260)", "oklch(75% 0.15 260)", "oklch(87% 0.15 260)", "oklch(95% 0.15 260)"]
+      },
+      "signal-orange": {
+        "role": "secondary",
+        "displayName": "Naranja de Calibración",
+        "canonical": "#ff7a2f",
+        "tonalRamp": ["oklch(15% 0.17 48)", "oklch(27% 0.17 48)", "oklch(39% 0.17 48)", "oklch(51% 0.17 48)", "oklch(63% 0.17 48)", "oklch(75% 0.17 48)", "oklch(87% 0.17 48)", "oklch(95% 0.17 48)"]
+      },
+      "status-green": {
+        "role": "tertiary",
+        "displayName": "Verde de Estado",
+        "canonical": "#1d7650",
+        "tonalRamp": ["oklch(15% 0.09 155)", "oklch(27% 0.09 155)", "oklch(39% 0.09 155)", "oklch(51% 0.09 155)", "oklch(63% 0.09 155)", "oklch(75% 0.09 155)", "oklch(87% 0.09 155)", "oklch(95% 0.09 155)"]
+      },
+      "status-red": {
+        "role": "tertiary",
+        "displayName": "Rojo de Error",
+        "canonical": "#b52f29",
+        "tonalRamp": ["oklch(15% 0.13 28)", "oklch(27% 0.13 28)", "oklch(39% 0.13 28)", "oklch(51% 0.13 28)", "oklch(63% 0.13 28)", "oklch(75% 0.13 28)", "oklch(87% 0.13 28)", "oklch(95% 0.13 28)"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Monumental",
+        "purpose": "Nombre del archivo y del laboratorio; un único punto dominante por superficie."
+      },
+      "headline": {
+        "displayName": "Headline Técnico",
+        "purpose": "Títulos de sección, banco y método."
+      },
+      "title": {
+        "displayName": "Título de Señal",
+        "purpose": "Nombres de experimentos próximos y piezas secundarias."
+      },
+      "body": {
+        "displayName": "Lectura Operativa",
+        "purpose": "Hipótesis, explicaciones, límites y notas."
+      },
+      "label": {
+        "displayName": "Lectura de Instrumento",
+        "purpose": "Índices, estados, runtimes, metadatos y coordenadas."
+      }
+    },
+    "shadows": [
+      {
+        "name": "status-halo",
+        "value": "0 0 0 4px rgba(29, 118, 80, 0.12)",
+        "purpose": "Halo operativo exclusivo del punto de estado activo; no representa elevación."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-state",
+        "value": "180ms ease",
+        "purpose": "Cambio de color y desplazamiento de botones."
+      },
+      {
+        "name": "trace-reveal",
+        "value": "1.2s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Revela una traza de espectro una sola vez."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "Duración efectiva para animaciones y transiciones bajo prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "rail-compact",
+        "value": "900px"
+      },
+      {
+        "name": "mobile-band",
+        "value": "620px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal para abrir o ejecutar un laboratorio.",
+      "html": "<button class=\"ds-button-primary\" type=\"button\">Abrir laboratorio</button>",
+      "css": ".ds-button-primary { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; padding: 0 18px; border: 1px solid var(--blue); border-radius: 0; background: var(--blue); color: white; font: inherit; font-weight: 700; cursor: pointer; transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease; } .ds-button-primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); transform: translateY(-2px); } .ds-button-primary:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; } .ds-button-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción preparatoria o de menor jerarquía dentro del banco.",
+      "html": "<button class=\"ds-button-secondary\" type=\"button\">Preparar modelo</button>",
+      "css": ".ds-button-secondary { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; padding: 0 18px; border: 1px solid var(--ink); border-radius: 0; background: transparent; color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; transition: background-color 180ms ease, color 180ms ease; } .ds-button-secondary:hover { background: var(--ink); color: white; } .ds-button-secondary:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; } .ds-button-secondary:active { opacity: 0.78; }"
+    },
+    {
+      "name": "Sample Action",
+      "kind": "chip",
+      "description": "Inserta un ejemplo sintético sin aparentar un filtro seleccionado.",
+      "html": "<button class=\"ds-sample-action\" type=\"button\">Incidente API</button>",
+      "css": ".ds-sample-action { min-height: 36px; padding: 0 11px; border: 1px solid var(--rule); border-radius: 0; background: transparent; color: var(--text); font: var(--font-body); font-size: 0.76rem; cursor: pointer; } .ds-sample-action:hover { border-color: var(--blue); color: var(--blue-dark); } .ds-sample-action:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; } .ds-sample-action:active { background: var(--surface-alt); }"
+    },
+    {
+      "name": "Technical Text Field",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "Campo de entrada amplio para solicitudes sintéticas.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-request\">Solicitud sintética</label><textarea class=\"ds-text-field\" id=\"ds-request\" rows=\"4\">La API responde 401 desde esta mañana.</textarea>",
+      "css": ".ds-field-label { display: block; margin-bottom: 9px; color: var(--text); font: var(--font-body); font-size: 0.82rem; font-weight: 700; } .ds-text-field { display: block; width: 100%; min-height: 128px; resize: vertical; padding: 16px; border: 1px solid var(--rule-strong); border-radius: 0; background: white; color: var(--ink); font: var(--font-body); line-height: 1.55; } .ds-text-field:hover { border-color: var(--ink); } .ds-text-field:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }"
+    },
+    {
+      "name": "Instrument Rail",
+      "kind": "nav",
+      "description": "Marca, lecturas y estado persistente del catálogo.",
+      "html": "<nav class=\"ds-instrument-rail\"><a class=\"ds-rail-mark\" href=\"#\"><strong>LT</strong><small>LABS</small></a><dl><div><dt>Modo</dt><dd>Personal</dd></div><div><dt>Runtime</dt><dd>Browser</dd></div></dl><p class=\"ds-rail-status\"><i></i>Catálogo activo</p></nav>",
+      "css": ".ds-instrument-rail { width: 188px; min-height: 420px; display: flex; flex-direction: column; padding: 26px 24px; border-right: 1px solid var(--rule-strong); background: linear-gradient(180deg, rgba(255,255,255,0.75), transparent 38%), var(--surface-alt); color: var(--ink); } .ds-rail-mark { display: grid; width: fit-content; color: var(--ink); text-decoration: none; } .ds-rail-mark strong { font: 720 2rem/0.9 var(--font-display); letter-spacing: -0.03em; } .ds-rail-mark small, .ds-instrument-rail dt, .ds-instrument-rail dd, .ds-rail-status { font-family: var(--font-data); font-size: 0.7rem; } .ds-rail-mark small { margin-top: 5px; color: var(--blue-dark); letter-spacing: 0.12em; } .ds-instrument-rail dl { display: grid; gap: 22px; margin: 74px 0 0; } .ds-instrument-rail dl div { display: grid; gap: 5px; } .ds-instrument-rail dt, .ds-instrument-rail dd { margin: 0; } .ds-instrument-rail dt { color: var(--muted); text-transform: uppercase; } .ds-instrument-rail dd { font-weight: 650; } .ds-rail-status { display: flex; align-items: center; gap: 9px; margin: auto 0 0; color: var(--green); text-transform: uppercase; } .ds-rail-status i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 4px rgba(29,118,80,0.12); } .ds-rail-mark:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }"
+    },
+    {
+      "name": "Active Lab Panel",
+      "kind": "card",
+      "refersTo": "experiment-panel",
+      "description": "Contenedor principal del experimento activo, marcado por una señal cobalto.",
+      "html": "<article class=\"ds-active-lab\"><header><span>LAB 01 / ACTIVO</span><h3>SLM Browser Router</h3></header><p>Una prueba ejecutable con hipótesis, código, límites y fuentes.</p></article>",
+      "css": ".ds-active-lab { position: relative; padding: 28px; border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule-strong); border-radius: 0; background: rgba(251,252,251,0.72); color: var(--ink); } .ds-active-lab::before { position: absolute; inset: 0 auto 0 -1px; width: 3px; content: \"\"; background: var(--blue); } .ds-active-lab span { color: var(--blue-dark); font: 650 0.72rem/1.2 var(--font-data); letter-spacing: 0.055em; text-transform: uppercase; } .ds-active-lab h3 { margin: 6px 0 20px; font: 650 2rem/1 var(--font-display); letter-spacing: -0.025em; } .ds-active-lab p { max-width: 50rem; margin: 0; color: var(--text); font: 1.05rem/1.65 var(--font-body); } .ds-active-lab:hover::before { background: var(--orange); } .ds-active-lab:focus-within { outline: 3px solid var(--orange); outline-offset: 3px; }"
+    },
+    {
+      "name": "Spectrum Plot",
+      "kind": "custom",
+      "description": "Componente firma que convierte un laboratorio en una señal medible.",
+      "html": "<figure class=\"ds-spectrum\"><svg viewBox=\"0 0 480 180\" role=\"img\" aria-label=\"Señal ilustrativa\"><g class=\"ds-grid\"><path d=\"M0 45H480M0 90H480M0 135H480M80 0V180M160 0V180M240 0V180M320 0V180M400 0V180\"/></g><path class=\"ds-trace-primary\" d=\"M0 138L30 126L48 141L70 119L92 132L118 112L145 128L170 98L197 122L225 84L248 114L275 72L300 104L327 93L354 110L382 99L410 118L438 109L480 129\"/><path class=\"ds-trace-secondary\" d=\"M0 159L50 153L82 161L122 150L166 159L210 147L252 157L296 151L340 162L386 154L430 164L480 158\"/></svg><figcaption>TRACE 01 <b>CATÁLOGO</b> · visualización ilustrativa</figcaption></figure>",
+      "css": ".ds-spectrum { margin: 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); border-radius: 0; background: var(--surface); } .ds-spectrum svg { display: block; width: 100%; height: auto; } .ds-grid path { fill: none; stroke: #d9dfdc; stroke-width: 1; } .ds-trace-primary, .ds-trace-secondary { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5; } .ds-trace-primary { stroke: var(--blue); } .ds-trace-secondary { stroke: var(--orange); } .ds-spectrum figcaption { padding: 12px 18px; border-top: 1px solid var(--rule); color: var(--muted); font: 0.67rem/1.4 var(--font-data); } .ds-spectrum figcaption b { color: var(--blue); } .ds-spectrum:hover .ds-trace-secondary { stroke-width: 3.5; } .ds-spectrum:focus-within { outline: 3px solid var(--orange); outline-offset: 3px; }"
+    },
+    {
+      "name": "Machine Output",
+      "kind": "custom",
+      "description": "Resultado estructurado mostrado como consola de máquina dentro del banco.",
+      "html": "<section class=\"ds-machine-output\"><header>SALIDA / CONTRATO JSON <span>12 ms</span></header><pre><code>{\n  \"categoria\": \"soporte_tecnico\",\n  \"prioridad\": \"alta\"\n}</code></pre><p>Salida validada contra el contrato.</p></section>",
+      "css": ".ds-machine-output { padding: 28px; border: 1px solid var(--rule-strong); border-radius: 0; background: linear-gradient(90deg, rgba(17,21,20,0.05) 1px, transparent 1px) 0 0 / 40px 100%, #eef1ef; color: var(--ink); } .ds-machine-output header { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font: 0.67rem/1.2 var(--font-data); } .ds-machine-output pre { min-height: 160px; margin: 28px 0; padding: 20px; overflow: auto; border: 1px solid var(--rule-strong); border-radius: 0; background: #131817; color: #dfe8e4; font: 0.82rem/1.7 var(--font-data); white-space: pre-wrap; } .ds-machine-output p { padding-top: 14px; border-top: 1px solid var(--rule); color: var(--green); font: 0.82rem/1.5 var(--font-body); } .ds-machine-output:focus-within { outline: 3px solid var(--orange); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Signal Archive",
+    "overview": "Cada laboratorio se presenta como una señal que puede abrirse, ejecutarse y medirse. La interfaz adopta el lenguaje de un instrumento de medición: papel técnico claro, grafito, escalas, trazas y controles rectangulares que hacen visible la relación entre hipótesis, ejecución y resultado.\n\nEl sistema es personal, técnico y directo. La expresión visual nace de la precisión y del contraste entre un título monumental, un rail de calibración y una señal dominante; no de recursos comerciales ni de una cuadrícula de portfolio. La densidad se concentra dentro del banco de pruebas y deja aire generoso alrededor del relato.",
+    "keyCharacteristics": [
+      "Archivo instrumental claro con estructura de medición.",
+      "Tipografía display condensada y datos monoespaciados.",
+      "Cobalto para la acción y naranja para señal, foco y contraste.",
+      "Bordes rectos, reglas finas y superficies planas.",
+      "Trazas y estados que comunican evidencia, nunca decoración gratuita."
+    ],
+    "rules": [
+      {
+        "name": "The Two-Signal Rule",
+        "body": "El cobalto comunica acción o señal primaria; el naranja comunica calibración, foco o señal secundaria. No intercambiar sus responsabilidades.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper First Rule",
+        "body": "Las superficies claras dominan cada pantalla. Los fondos oscuros se limitan a resultados de máquina que necesitan comportarse como consola.",
+        "section": "colors"
+      },
+      {
+        "name": "The Instrument Label Rule",
+        "body": "Cascadia Mono se usa solo cuando el texto representa un índice, una lectura, un estado o una coordenada del sistema.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Monument Rule",
+        "body": "Cada superficie tiene un único título display dominante; las demás jerarquías bajan de escala con claridad.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rail and Signal Rule",
+        "body": "La navegación se presenta como calibración persistente en escritorio y como banda superior en móvil; la señal principal ocupa el resto del primer viewport.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Instrument Rule",
+        "body": "Ningún panel flota. Para separar capas, usar una superficie tonal o una regla, nunca una sombra de tarjeta.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Functional Circle Rule",
+        "body": "Una forma circular debe representar un punto medido, un estado o un marcador; no se usa como adorno ni como contenedor genérico.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do usar reglas, ejes y cambios tonales para construir jerarquía.",
+      "Do reservar el cobalto para acción y señal primaria, y el naranja para foco y calibración.",
+      "Do presentar resultados, límites y estados como lecturas verificables.",
+      "Do adaptar el rail a banda superior y apilar el banco por debajo de 620 px.",
+      "Do respetar `prefers-reduced-motion` y mantener foco de teclado de alto contraste."
+    ],
+    "donts": [
+      "Don't convertir el catálogo en una cuadrícula de tarjetas genéricas.",
+      "Don't usar esquinas redondeadas en controles o contenedores.",
+      "Don't añadir sombras decorativas, brillos ambientales o paneles flotantes.",
+      "Don't introducir lenguaje de venta, insignias comerciales o claims sin evidencia.",
+      "Don't usar trazas o métricas ilustrativas como si fueran benchmarks ejecutados."
+    ]
+  }
+}

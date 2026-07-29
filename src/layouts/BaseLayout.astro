@@ -1,0 +1,36 @@
+---
+import "@fontsource-variable/bricolage-grotesque";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f2f4f3" />
+    <meta name="color-scheme" content="light" />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <!--
+      THESIS: Cada laboratorio es una señal que puede abrirse, ejecutarse y medirse; se rechaza el portafolio técnico armado como una cuadrícula de tarjetas.
+      OWN-WORLD: Papel instrumental claro, grafito, azul cobalto y naranja de señal; trazas, escalas y controles rectos organizan la interfaz.
+      STORY: La persona identifica el catálogo, distingue pruebas activas de futuras y entra al experimento que quiere ejecutar.
+      FIRST VIEWPORT: Una banda de calibración fija acompaña un título grande y una señal dominante; la acción principal vive dentro del experimento activo.
+      FORM: Archivo de analizador de espectro, tercera dirección; los contenedores cambian proporción para anticipar el tipo de laboratorio. Seed bf85aa38.
+    -->
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
+    <slot />
+  </body>
+</html>

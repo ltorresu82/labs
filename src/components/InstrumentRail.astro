@@ -1,0 +1,38 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<aside class:list={["instrument-rail", { compact }]} aria-label="Estado del catálogo">
+  <a class="rail-mark" href={compact ? "../" : "./"} aria-label="Volver al catálogo">
+    <span>LT</span>
+    <small>LABS</small>
+  </a>
+
+  <dl>
+    <div>
+      <dt>Modo</dt>
+      <dd>Personal</dd>
+    </div>
+    <div>
+      <dt>Runtime</dt>
+      <dd>Browser</dd>
+    </div>
+    <div>
+      <dt>Datos</dt>
+      <dd>Sintéticos</dd>
+    </div>
+    <div>
+      <dt>Red</dt>
+      <dd>Estática</dd>
+    </div>
+  </dl>
+
+  <div class="rail-status">
+    <i aria-hidden="true"></i>
+    <span>Catálogo activo</span>
+  </div>
+</aside>

@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InstrumentRail from "../components/InstrumentRail.astro";
+import SpectrumPlot from "../components/SpectrumPlot.astro";
+
+const title = "Luis Torres — Engineering Labs";
+const description =
+  "Experimentos personales y reproducibles sobre IA aplicada, arquitectura de software y sistemas distribuidos.";
+---
+
+<BaseLayout {title} {description}>
+  <div class="lab-shell">
+    <InstrumentRail />
+
+    <main id="contenido" class="catalog">
+      <header class="catalog-header">
+        <p class="catalog-kicker">Archivo personal de pruebas / edición 2026</p>
+        <div class="catalog-intro">
+          <h1>Luis Torres —<br />Engineering Labs</h1>
+          <p>
+            Experimentos que se pueden ejecutar, medir y discutir. Cada prueba publica
+            su hipótesis, código, límites y fuentes.
+          </p>
+        </div>
+      </header>
+
+      <section class="active-lab" aria-labelledby="active-lab-title">
+        <div class="lab-heading">
+          <div>
+            <span class="lab-index">LAB 01 / ACTIVO</span>
+            <h2 id="active-lab-title">SLM Browser Router</h2>
+          </div>
+          <a class="button-primary" href="./slm-browser-router/">Abrir laboratorio</a>
+        </div>
+
+        <SpectrumPlot />
+
+        <div class="lab-summary">
+          <p>
+            ¿Puede un modelo de 500 millones de parámetros clasificar solicitudes en
+            español bajo un contrato estricto, sin enviar el texto a un servidor?
+          </p>
+          <dl>
+            <div>
+              <dt>Modelo</dt>
+              <dd>Qwen2.5 · 0.5B</dd>
+            </div>
+            <div>
+              <dt>Ejecución</dt>
+              <dd>WebGPU local</dd>
+            </div>
+            <div>
+              <dt>Estado</dt>
+              <dd>Experimental</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="upcoming" aria-labelledby="upcoming-title">
+        <div class="section-heading">
+          <h2 id="upcoming-title">Próximas señales</h2>
+          <p>El catálogo crecerá solo cuando exista una prueba que pueda ejecutarse.</p>
+        </div>
+
+        <div class="signal-row">
+          <span>LAB 02</span>
+          <div>
+            <h3>WebGPU Device Benchmark</h3>
+            <p>Comparación reproducible de carga, latencia y compatibilidad.</p>
+          </div>
+          <small>En diseño</small>
+          <svg viewBox="0 0 320 48" aria-hidden="true">
+            <path d="M0 27 L18 25 L31 29 L45 24 L61 28 L78 23 L93 27 L108 20 L124 27 L139 25 L154 29 L169 22 L184 27 L199 24 L216 28 L232 23 L247 27 L263 25 L279 29 L296 24 L320 27" />
+          </svg>
+        </div>
+
+        <div class="signal-row">
+          <span>LAB 03</span>
+          <div>
+            <h3>Document Extraction Contract</h3>
+            <p>Extracción local de campos y validación de salidas estructuradas.</p>
+          </div>
+          <small>En observación</small>
+          <svg viewBox="0 0 320 48" aria-hidden="true">
+            <path d="M0 30 L23 28 L39 31 L58 27 L75 30 L94 26 L111 29 L130 25 L149 30 L167 27 L185 31 L204 26 L222 29 L241 27 L260 31 L281 28 L300 30 L320 27" />
+          </svg>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          Proyecto técnico personal. No representa a empleadores, clientes ni
+          organizaciones con las que el autor mantenga una relación profesional.
+        </p>
+        <a href="https://github.com/ltorresu82/labs">Código fuente en GitHub</a>
+      </footer>
+    </main>
+  </div>
+</BaseLayout>

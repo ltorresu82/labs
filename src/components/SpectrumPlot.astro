@@ -1,0 +1,51 @@
+---
+interface Props {
+  muted?: boolean;
+  label?: string;
+}
+
+const { muted = false, label = "Señal ilustrativa del catálogo" } = Astro.props;
+---
+
+<figure class:list={["spectrum", { muted }]}>
+  <svg viewBox="0 0 960 360" role="img" aria-labelledby="spectrum-title spectrum-desc">
+    <title id="spectrum-title">{label}</title>
+    <desc id="spectrum-desc">
+      Dos trazas ilustrativas recorren un plano de medición. No representan resultados
+      de rendimiento.
+    </desc>
+    <g class="grid" aria-hidden="true">
+      {
+        Array.from({ length: 13 }, (_, index) => (
+          <line x1={index * 80} x2={index * 80} y1="0" y2="360" />
+        ))
+      }
+      {
+        Array.from({ length: 7 }, (_, index) => (
+          <line x1="0" x2="960" y1={index * 60} y2={index * 60} />
+        ))
+      }
+    </g>
+    <path
+      class="trace trace-primary"
+      pathLength="1"
+      d="M0 276 L24 268 L41 282 L56 259 L70 273 L91 260 L110 270 L126 251 L141 264 L160 258 L178 269 L195 244 L210 257 L229 239 L247 253 L263 232 L278 247 L295 226 L312 243 L327 201 L343 238 L358 219 L371 234 L388 190 L404 226 L418 214 L432 230 L448 211 L465 223 L482 204 L496 217 L513 196 L528 209 L543 171 L558 205 L574 193 L590 211 L607 186 L623 204 L638 197 L654 215 L671 192 L687 208 L704 200 L721 218 L738 207 L755 224 L773 213 L791 232 L809 220 L827 239 L846 229 L865 246 L883 237 L903 257 L922 248 L941 266 L960 258"
+    />
+    <path
+      class="trace trace-secondary"
+      pathLength="1"
+      d="M0 318 L31 314 L48 320 L63 305 L77 316 L101 311 L124 318 L145 304 L161 315 L181 309 L198 318 L217 302 L235 311 L254 299 L271 312 L289 305 L306 313 L323 289 L340 309 L359 301 L378 312 L397 293 L414 308 L432 303 L450 314 L469 306 L488 315 L505 301 L523 312 L540 297 L558 310 L576 302 L594 314 L613 306 L632 315 L651 309 L670 318 L688 312 L708 319 L729 314 L750 321 L772 316 L794 323 L817 319 L840 325 L864 321 L889 328 L913 324 L937 330 L960 327"
+    />
+    <g class="marker" aria-hidden="true">
+      <line x1="543" x2="543" y1="72" y2="332" />
+      <circle cx="543" cy="171" r="5" />
+      <text x="558" y="156">LAB 01</text>
+      <text x="558" y="176">SLM / WEBGPU</text>
+    </g>
+  </svg>
+  <figcaption>
+    <span>TRACE 01 <b>CATÁLOGO</b></span>
+    <span>TRACE 02 <b>PRÓXIMOS</b></span>
+    <small>Visualización ilustrativa · no es un benchmark</small>
+  </figcaption>
+</figure>
